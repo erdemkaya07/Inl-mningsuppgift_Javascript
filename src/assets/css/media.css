@@ -38,6 +38,25 @@
   .main-menu {
     display: none!important;
   }
+  .main-menu.is-open{
+   display: block!important;
+   position: absolute;
+   right: 0;
+   top: 100%;
+   flex-direction: column-reverse;
+   box-shadow: var(--box-shadow);
+   padding: 2rem;
+   background-color: var(--bg-white);
+   border-radius: .7rem;
+   .nav-links {
+    padding: 1rem;
+   }
+  }
+  .nav-links {
+    display: inline-block;
+    padding: .5rem;
+
+  }
   .signIn {
     display: none!important;
   }
@@ -52,5 +71,3 @@
     display: none;
   }
 }
-
-

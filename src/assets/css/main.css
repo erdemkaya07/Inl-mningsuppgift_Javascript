@@ -9,9 +9,11 @@
   --gray-300: #E2E5F1;
   --gray-200: #EFF2FC;
   --gray-100: #F3F6FF;
+  --bg-white: #fff;
   --primary-color: #6366F1;
   --success-color: #22C55E ;
   --transiton-hover: 0.5s ease-in-out;
+  --box-shadow: 0 5px 5px #00000028
 }
 
 [data-theme="light"] .show-light {
@@ -23,6 +25,7 @@
 
 [data-theme="dark"] {
   background-color: #0B0F19 ;
+  --bg-white: #9397AD;
   --gray-900: #fff;
   --gray-800: #fff;
 }
@@ -35,7 +38,7 @@
 }
 
 .navbar {
-  .navbar-links {
+  .nav-links {
     color: var(--gray-800);
     &:hover,
     &:focus {
@@ -49,6 +52,7 @@
   .btn-mobile {
     display: none;
     background-color: transparent;
+    color: var(--gray-900);
     border: 0;
     font-size: 1.7rem;
     cursor: pointer;
