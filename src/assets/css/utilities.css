@@ -1,11 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body, section, div, header, footer, main, aside, nav, blockquote, p, span, ul, h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
 li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  width: 140px;
+  height: 37px;
+  font-size: .9rem;
+  background-color: var(--primary-color);
+  color: #f3f6ff;
+  border: 0 solid;
+  border-radius: 10px;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: #3b3eff ;
+      transition: var(--transiton-hover)
+    }
+}
+
+/* Line */
 .line-height {
   line-height: 1.5rem;
 }
 
+
+/* Grid */
 .grid-1fr {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,11 +93,22 @@ li {
   place-items: center;
 }
 
+/* Flex */
+
 .flex {
   display: flex;
-  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
   justify-content: center;
-  gap: 1rem;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .flex-direction {
@@ -215,6 +271,54 @@ li {
   margin-block: 9rem;
 }
 
+/* Nargin Left */
+
+.ml-0 {
+  margin-left: 0.5rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 1.5rem;
+}
+.ml-3 {
+  margin-left: 2rem;
+}
+.ml-4 {
+  margin-left: 2.5em;
+}
+.ml-5 {
+  margin-left: 3rem;
+}
+.ml-6 {
+  margin-left: 3.5rem;
+}
+
+/* Margin Right */
+
+.mr-0 {
+  margin-right: 0.5rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-2 {
+  margin-right: 1.5rem;
+}
+.mr-3 {
+  margin-right: 2rem;
+}
+.mr-4 {
+  margin-right: 2.5em;
+}
+.mr-5 {
+  margin-right: 3rem;
+}
+.mr-6 {
+  margin-right: 3.5rem;
+}
+
 /* Text Align */
 
 .text-center {
@@ -238,4 +342,28 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+}
+
+/* Font weight */
+
+.weigt-extra-light {
+  font-weight: 200;
+}
+.weigt-light {
+  font-weight: 300;
+}
+.weigt-regular {
+  font-weight: 400;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.weigt-semi-bold {
+  font-weight: 600;
+}
+.weigt-bold {
+  font-weight: 700;
+}
+.weigt-extra-bold {
+  font-weight: 800;
 }
