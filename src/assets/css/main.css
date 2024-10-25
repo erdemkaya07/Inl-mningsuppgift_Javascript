@@ -14,10 +14,24 @@
   --transiton-hover: 0.5s ease-in-out;
 }
 
+[data-theme="light"] .show-light {
+  display: block;
+}
+[data-theme="light"] .show-dark {
+  display: none;
+}
+
 [data-theme="dark"] {
   background-color: #0B0F19 ;
   --gray-900: #fff;
   --gray-800: #fff;
+}
+
+[data-theme=dark] .show-light {
+  display: none;
+}
+[data-theme=dark] .show-dark {
+  display: block;
 }
 
 .navbar {
@@ -31,5 +45,18 @@
   }
   .dark-mode-text{
     color: var(--gray-700);
+  }
+  .btn-mobile {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.7rem;
+    cursor: pointer;
+    @media (width <= 992px) {
+        display: block!important;
+    }
+      @media (width <= 576px) {
+        margin-left: 0;
+    }
   }
 }

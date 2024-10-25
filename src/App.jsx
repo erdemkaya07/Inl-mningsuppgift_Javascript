@@ -5,7 +5,7 @@ import '../src/assets/css/media.css'
 import '../src/assets/css/utilities.css'
 import '../src/assets/css/toggle.css'
 import './App.css'
-import Nav from './components/Nav'
+import Nav from './components/1Nav/Nav'
 
 function App() {
 

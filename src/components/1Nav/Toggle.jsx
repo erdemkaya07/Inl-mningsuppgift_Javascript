@@ -1,11 +1,10 @@
 import React from "react";
-import { useTheme } from "../api/theme";
+import { useTheme } from "../../api/theme";
 
 
 function Toggle() {
 
-  const [theme, handleChange] = useTheme('dark')
-
+  const [theme, handleChange] = useTheme('light')
 
   return (
     <div className="toggle-container flex align-items-center">
